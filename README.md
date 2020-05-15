@@ -1,4 +1,5 @@
-# Second Year Scholarship Application: Cancer Rate Analysis
+# Second Year Scholarship Application: 
+# Cancer Rate Analysis
 
   Through Internet search, in 2019, nearly 610,000 Americans died of cancer. And there were 1.8 million new cancer patients. Cancer ranks the second in number of deaths among all diseases in the United States, only about 50,000 less than heart disease (National Cancer Institute, “SEER Cancer Statistics Factsheets”). The number of diagnosed cancers continues to maintain at a relatively stable level. Comparing with 2018, the number of men who died of cancer fell by 2%, while the number of women who died of cancer remained the same. But it is important to note that the number of young people in the cancer patients is in an increasing trend in recent years. Cancer is the fourth leading cause of death in the 20-39 age group(American Cancer Society, “Key Statistics for Cancers in Young Adults”). The reason behind this phenomenon may be obesity, or excessive drinking (Piersol). So, as a person in this age group, I want to study some information behind cancer.
 
