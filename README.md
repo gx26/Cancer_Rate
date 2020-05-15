@@ -1,74 +1,106 @@
-# Cancer_Rate
+[![Actions Status](https://github.com/xueruini/thuthesis/workflows/Test/badge.svg)](https://github.com/xueruini/thuthesis/actions)
+[![Join the chat at https://gitter.im/thuthesis/Lobby](https://badges.gitter.im/thuthesis/Lobby.svg)](https://gitter.im/thuthesis/Lobby)
+[![GitHub downloads](https://img.shields.io/github/downloads/xueruini/thuthesis/total)](https://github.com/xueruini/thuthesis/releases)
+[![GitHub commits](https://img.shields.io/github/commits-since/xueruini/thuthesis/latest)](https://github.com/xueruini/thuthesis/commits/master)
+[![GitHub release](https://img.shields.io/github/v/release/xueruini/thuthesis)](https://github.com/xueruini/thuthesis/releases/latest)
+[![CTAN](https://img.shields.io/ctan/v/thuthesis)](https://www.ctan.org/pkg/thuthesis)
 
-% !TeX encoding = UTF-8
-% !TeX program = xelatex
-% !TeX spellcheck = en_US
+# What's ThuThesis?
+**ThuThesis** is an abbreviation of **T**sing**h**ua **U**niversity **Thesis** LaTeX Template.
 
-\documentclass[degree=master]{thuthesis}
-  % 学位 degree:
-  %   doctor | master | bachelor | postdoc
-  % 学位类型 degree-type:
-  %   academic（默认）| professional
-
-
-% 论文基本配置，加载宏包等全局配置
-\input{thusetup.tex}
+This package establishes a simple and easy-to-use LaTeX template for Tsinghua dissertations, including general undergraduate research papers, masters theses, doctoral dissertations, and postdoctoral reports. An English translation of this README follows the Chinese below.
 
 
-\begin{document}
+# ThuThesis 是什么？
+**ThuThesis** 是 **T**sing**h**ua **U**niversity **Thesis** LaTeX Template 的缩写。
 
-% 封面
-\maketitle
+此宏包旨在建立一个简单易用的清华大学学位论文 LaTeX 模板，包括本科综合论文训练、硕士论文、博士论文以及博士后出站报告。
 
-% 使用授权的说明
-\copyrightpage
+# 文档
+请[下载](https://github.com/xueruini/thuthesis/releases)模板，里面包括具体使用说明以及示例文档：
 
-\frontmatter
-\input{data/abstract.tex}
+* 模板使用说明 (thuthesis.pdf)
+* 示例文档 (main.pdf)
 
-% 目录
-\tableofcontents
+# 下载
+* 发行版：[CTAN](https://www.ctan.org/pkg/thuthesis)
+* 开发版：[GitHub](https://github.com/xueruini/thuthesis)
 
-% 符号对照表
-\input{data/denotation}
+# 升级
+## 自动更新
+通过 TeX 发行版工具自动从 [CTAN](https://www.ctan.org/pkg/thuthesis) 更新。
 
+## 手动更新
+从 [GitHub](https://github.com/xueruini/thuthesis) 下载放入论文目录，执行命令（Windows 用户在文件夹空白处按 `Shift + 鼠标右键`，点击“在此处打开命令行窗口”）：
 
-% 正文部分
-\mainmatter
-\input{data/chap01}
-\input{data/chap02}
+```shell
+xetex thuthesis.ins
+```
 
+即可得到 `thuthesis.cls` 等模板文件。
 
-% 其它部分
-\backmatter
+# 提问
+按推荐顺序排序：
 
-%% 本科生要求的几个索引。
-% \listoffigures    % 插图索引
-% \listoftables     % 表格索引
-% \listofequations  % 公式索引
+* 先到 [FAQ](https://github.com/xueruini/thuthesis/wiki/FAQ) 看看常见问题
+* [GitHub Issues](https://github.com/xueruini/thuthesis/issues)
 
-% 参考文献
-\bibliographystyle{thuthesis-numeric}      % 顺序编码制
-% \bibliographystyle{thuthesis-author-year}  % 著者-出版年制
-% \bibliographystyle{thuthesis-bachelor}     % 本科生参考文献的著录格式
-\bibliography{ref/refs}
+# Makefile的用法
 
-% 致谢
-\input{data/acknowledgements}
+```shell
+make [{all|thesis|spine|doc|clean|cleanall|distclean}]
+```
 
-% 声明
-\statement
+## 目标
+* `make thesis`    生成论文 main.pdf；
+* `make spine`     生成书脊 spine.pdf；
+* `make doc`       生成模板使用说明书 thuthesis.pdf；
+* `make all`       生成论文和书籍，相当于 `make thesis && make spine`；
+* `make clean`     删除示例文件的中间文件（不含 main.pdf）；
+* `make cleanall`  删除示例文件的中间文件和 main.pdf；
+* `make distclean` 删除示例文件和模板的所有中间文件和 PDF。
 
-% 附录
-\appendix
-% \input{data/appendix-survey}       % 本科生：外文资料的调研阅读报告
-% \input{data/appendix-translation}  % 本科生：外文资料的书面翻译
-\input{data/appendix}
+---
 
-% 个人简历
-\input{data/resume}
+# Documentation
+Download and unzip the template. Specific usage documentation and examples can be found in the files below. At present, these documents are <b>only available in Chinese</b>:
+* Template usage (thuthesis.pdf)
+* Template example (main.pdf)
 
-% 本科生的综合论文训练记录表
-% \includepdf[pages=-]{scan-record.pdf}
+# Downloads
+* Published version: [CTAN](https://www.ctan.org/pkg/thuthesis)
+* Developer version: [GitHub](https://github.com/xueruini/thuthesis)
 
-\end{document}
+# Updates
+## Automatic
+Get the most up-to-date published version with your TeX distribution from [CTAN](https://www.ctan.org/pkg/thuthesis).
+
+## Manual
+Download the package from [GitHub](https://github.com/xueruini/thuthesis) to the root directory of your thesis, then execute the command (Windows users `Shift + right click` white area in the file window and click "Open command line window here" from the popup menu):
+
+```shell
+xetex thuthesis.ins
+```
+
+You'll get `thuthesis.cls` along with other template files.
+
+# Reporting Issues
+Please follow the procedure below:
+
+* Check the [FAQ](https://github.com/xueruini/thuthesis/wiki/FAQ)
+* [GitHub Issues](https://github.com/xueruini/thuthesis/issues)
+
+# Makefile Usage
+
+```shell
+make [{all|thesis|spine|doc|clean|cleanall|distclean}]
+```
+
+## Targets
+* `make thesis`    generate thesis main.pdf;
+* `make spine`     generate book spine for printing spine.pdf;
+* `make doc`       generate template documentation thuthesis.pdf;
+* `make all`       generate thesis and spine, same as `make thesis && make spine`;
+* `make clean`     delete all examples' files (excluding main.pdf);
+* `make cleanall`  delete all examples' files and main.pdf;
+* `make distclean` delete all examples' and templates' files and PDFs.
