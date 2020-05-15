@@ -4,9 +4,9 @@
 
 ## **The overview**
 
-  In the **project report**, I analyze and explaine three data sets, codes and graphs, and calso ombine the conclusions made by data with the reality by searching news, article, governmental policy, etc. This report is responsible for the **stroytelling part**.
+  In the **[project report](Cancer_Rate_Report.docx)**, I analyze and explaine three data sets, codes and graphs, and calso ombine the conclusions made by data with the reality by searching news, article, governmental policy, etc. This report is responsible for the **stroytelling part**.
 
-  The other **four HTML** files are responsible for **visualization** and **predictition** through code.
+  The other **[four HTML](https://github.com/gx26/Cancer_Rate)** files are responsible for **visualization** and **predictition** through code.
 
 ## **This repository contains**:
 
