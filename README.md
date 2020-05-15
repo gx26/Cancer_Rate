@@ -20,7 +20,7 @@
 
 - 5. *[Part Three](Part3.html)* - This file is an analysis of *[superfund_cleaning.csv](https://github.com/gx26/Cancer_Rate/blob/master/Datasets/superfund_cleaned.csv)*, a dataset that was linked to the EPA provided by Dr.Ami and then crawled down using beautifulsoup. In this file, the relationship between some variables in the data set and superfund sites' score is mainly studied.
 
-- 6. *[Part Four](Part4.html)* - In this file, I first put three data sets together for analysis. For example, whether the number of superfund sites in a state is related to the cancer cases per 100,000 people in this state, whether the type of power plants primary fuel is related to the cancer cases per 100,000 people in this state, etc. Moreover, after some variables were filtered from the merged data set, cancer cases per 100000 people were modeled using XGBoost, Random Forest, CatBoost, etc. Finally, stacking and blending were attempted, and the lowest RMSE, 11.58 was obtained by blending models.
+- 6. *[Part Four](Part4.html)* - In this file, I put three data sets together for analysis. For example, whether the number of superfund sites in a state is related to the cancer cases per 100,000 people in this state, whether the type of power plants primary fuel is related to the cancer cases per 100,000 people in this state, etc. Moreover, after some variables were filtered from the merged data set, cancer cases per 100000 people were modeled using XGBoost, Random Forest, CatBoost, etc. Finally, stacking and blending were attempted, and the lowest RMSE, 11.58 was obtained by blending models.
 
 ## **Other thoughts**
 
